@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H5-34-mtV" customClass="WITMicButton">
+                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="baS-Fw-lrC"/>
+                                    <constraint firstAttribute="width" constant="120" id="pgg-co-DAr"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvV-5a-prI">
+                                <rect key="frame" x="16" y="211" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Something!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52g-Ln-Gpc">
+                                <rect key="frame" x="16" y="182" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mvV-5a-prI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Iq7-sg-RXQ"/>
+                            <constraint firstItem="52g-Ln-Gpc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="J2r-5i-1fC"/>
+                            <constraint firstAttribute="centerY" secondItem="0H5-34-mtV" secondAttribute="centerY" id="LbO-oT-n6A"/>
+                            <constraint firstAttribute="trailing" secondItem="mvV-5a-prI" secondAttribute="trailing" constant="16" id="M4a-wz-f8u"/>
+                            <constraint firstAttribute="centerX" secondItem="0H5-34-mtV" secondAttribute="centerX" id="fX2-I6-Psl"/>
+                            <constraint firstItem="0H5-34-mtV" firstAttribute="top" secondItem="mvV-5a-prI" secondAttribute="bottom" constant="8" id="qE7-6b-URE"/>
+                            <constraint firstItem="mvV-5a-prI" firstAttribute="top" secondItem="52g-Ln-Gpc" secondAttribute="bottom" constant="8" id="tOs-7Q-xcC"/>
+                            <constraint firstAttribute="trailing" secondItem="52g-Ln-Gpc" secondAttribute="trailing" constant="16" id="zeA-lU-z7n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="intentLabel" destination="mvV-5a-prI" id="fbw-XR-dqc"/>
+                        <outlet property="messageLabel" destination="52g-Ln-Gpc" id="XT5-h3-TtD"/>
+                        <outlet property="witButton" destination="0H5-34-mtV" id="9o7-u0-XkY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
